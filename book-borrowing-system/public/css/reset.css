@@ -1,0 +1,254 @@
+/* reset */
+@charset "UTF-8";
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+p,
+blockquote,
+pre,
+hr,
+figure,
+table,
+caption,
+th,
+td,
+form,
+fieldset,
+legend,
+input,
+button,
+textarea,
+menu {
+    margin: 0;
+    padding: 0;
+}
+
+header,
+footer,
+section,
+article,
+aside,
+nav,
+hgroup,
+address,
+figure,
+figcaption,
+menu,
+details {
+    display: block;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+caption,
+th {
+    text-align: left;
+    font-weight: normal;
+}
+
+html,
+body,
+fieldset,
+img,
+iframe,
+abbr {
+    border: 0;
+}
+
+i,
+cite,
+em,
+var,
+address,
+dfn {
+    font-style: normal;
+}
+
+[hidefocus],
+summary {
+    outline: 0;
+}
+
+li {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+small {
+    font-size: 100%;
+}
+
+sup,
+sub {
+    font-size: 83%;
+}
+
+pre,
+code,
+kbd,
+samp {
+    font-family: inherit;
+}
+
+q:before,
+q:after {
+    content: none;
+}
+
+textarea {
+    overflow: auto;
+    resize: none;
+}
+
+label,
+summary {
+    cursor: default;
+}
+
+a,
+button {
+    cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+em,
+strong,
+b {
+    font-weight: bold;
+}
+
+del,
+ins,
+u,
+s,
+a,
+a:hover {
+    text-decoration: none;
+}
+
+body,
+textarea,
+input,
+button,
+select,
+keygen,
+legend {
+    /* font: 12px/1.14 arial, \5b8b\4f53; */
+    color: #333;
+    outline: 0;
+}
+/* scroll */
+
+::-webkit-scrollbar {
+    /*滚动条整体样式*/
+    width: 8px !important;
+    /*高宽分别对应横竖滚动条的尺寸*/
+    height: 8px !important;
+    /* background: red !important; */
+    cursor: pointer;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    /*滚动条里面小方块*/
+    border-radius: 8px !important;
+    box-shadow: inset 0 0 5px rgba(240, 240, 240, 0.5) !important;
+    background: rgb(161 161 161 / 20%) !important;
+    cursor: pointer !important;
+    background-clip: padding-box !important;
+    border: 2px solid transparent !important;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    border-color: rgba(240, 240, 240, 0.3) !important;
+  }
+  ::-webkit-scrollbar-corner{
+    background: rgb(161 161 161 / 10%) !important;
+   }
+  ::-webkit-scrollbar-track {
+    /*滚动条里面轨道*/
+    /* box-shadow: inset 0 0 5px rgba(240, 240, 240, 0.5) !important; */
+    border-radius: 0 !important;
+    background: rgb(161 161 161 / 10%) !important;
+    cursor: pointer !important;
+  }
+body {
+    background: transparent;
+    font-family: alibabaRegular-2, 'Microsoft YaHei', Arial, Helvetica, sans-serif;
+    background: transparent;
+}
+
+html, body, #app {
+    width: 100%;
+    height: 100%;
+    user-select: none;
+    /* overflow: hidden; */
+}
+
+/* 组件 */
+.component-container{
+    position: absolute;
+    left: var(--left);
+    top: var(--top);
+    width: var(--width);
+    height: var(--height);
+    opacity: var(--opacity);
+    padding: var(--padding);
+    background-color: var(--backgroundColor);
+    background-image: var(--backgroundImage);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    overflow: hidden;
+    z-index: 1;
+}
+
+/* 配置了交互的组件 */
+.component-container[has-interaction-on-main]{
+    cursor: pointer;
+}
+
+.resafety-echart-tooltip {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+.someone-drag-in{
+    background: rgba(241, 226, 2, 0.329) !important;
+}
+
+.tree-drag-in{
+    background: rgba(241, 226, 2, 0.329) !important;
+}
+
+#nprogress .spinner {
+    display: none;
+}
+
+
