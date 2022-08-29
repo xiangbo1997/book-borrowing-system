@@ -1,0 +1,27 @@
+
+// 头部导航样式
+$navHeight:70px;
+$navFontColor: #000;
+$navActiveFontColor: #409eff;
+$navFontSize: 18px;
+$navbgcolor: #008df7;
+
+// 侧边导航
+$asideWidth: 100px;
+$asideHeight: 100%;
+$asidebgcolor:#fff;
+
+
+// 主体高度
+$mainWidth: calc(100% - $asideWidth);
+$mainHeight: 100%;
+$mainbgcolor: #f0f4f7;
+
+// 登录
+//pagelist
+
+$app-tabnav-hover-color: #409eff;
+$app-tabnav-active-color: #409eff;
+
+$app-createblank-buttonbg:#409eff;
+
